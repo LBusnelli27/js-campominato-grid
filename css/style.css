@@ -1,5 +1,6 @@
-header {
-    padding: 1rem 5rem;
+header,
+footer {
+    padding: .7rem 5rem;
 }
 
 .my-img-header {
