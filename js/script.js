@@ -30,10 +30,17 @@ function createCol(nBox) {
     }
 }
 
+/**
+ * This function reset the play ground
+ */
+function resetNewGame() {
+    document.getElementById('my-play-ground').innerHTML = "";
+}
+
 // ********** END FUNCTION **********
 
 
-const playGround = document.getElementById('my-play-groud');
+const playGround = document.getElementById('my-play-ground');
 
 const playBtn = document.getElementById('play-button');
 playBtn.addEventListener('click', function() {
@@ -50,3 +57,8 @@ playBtn.addEventListener('click', function() {
     }
 })
 
+
+const resetBtn = document.getElementById('reset-button');
+resetBtn.addEventListener('click', function() {
+    resetNewGame();
+})
